@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import (QApplication,QWidget,
 
 from instr import*
 
-class TestWin(QWidget):
+class Test2Win(QWidget):
     def __init__(self):
         QWidget.__init__(self)
         self.set_appear()

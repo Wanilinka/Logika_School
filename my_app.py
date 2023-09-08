@@ -32,9 +32,13 @@ class MainWin (QWidget):
         self.layout.addWidget(self.button)
         self.layout.addWidget(self.instructions)
         self.setLayout(self.layout)
-        
+
+    def timer_test(self):
+        global time
+        time = QTime(0,0,15)
     def connects(self):
         self.button.clicked.connect(self.next_click)
+        self.button.clicked.connect(self.timer_test)
 
     def next_click(self):
         self.hide()
