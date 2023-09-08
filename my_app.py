@@ -29,11 +29,12 @@ class MainWin (QWidget):
         self.layout = QVBoxLayout()
 
         self.layout.addWidget(self.hello_txt)
-        self.button.addWidget(self.layout)
-        self.instructions.addWidget(self.layout)
+        self.layout.addWidget(self.button)
+        self.layout.addWidget(self.instructions)
+        self.setLayout(self.layout)
         
     def connects(self):
-        self.btn_next.clicked.connect(self.next_click)
+        self.button.clicked.connect(self.next_click)
 
     def next_click(self):
         self.hide()
@@ -41,5 +42,5 @@ class MainWin (QWidget):
 
 
 app = QApplication([])
-mw=MainWin()
+mw = MainWin()
 app.exec_()

@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import (QApplication,QWidget,
                              QPushButton,)
 
 from instr import*
+from final_win import*
 
 class TestWin(QWidget):
     def set_appear(self):
